@@ -20,7 +20,10 @@ while True:
     computer_pick = options[random_number]
     print("Computer Picked", computer_pick + ".")
 
-    if user_input == "r" and computer_pick == "s":
+    if user_input == computer_pick:
+        print("It's a tie!")
+
+    elif user_input == "r" and computer_pick == "s":
         print("You Won!")
         user_wins +=1
 
